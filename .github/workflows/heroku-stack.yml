@@ -12,4 +12,4 @@ jobs:
           -H "Content-Type: application/json" \
           -H "Accept: application/vnd.heroku+json; version=3" \
           -H "Authorization: Bearer ${{ secrets.HEROKU_API_KEY }}" \
-          -d '{"build_stack": "container"}' | jq '.build_stack'
+          -d '{"build_stack": "container"}'
