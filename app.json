@@ -16,7 +16,7 @@
     },
     "AP_FRONTEND_URL": {
       "description": "Your Heroku app URL",
-      "value": "https://activepieces-f072d4fb20e0.herokuapp.com",
+      "value": "https://activepieces.herokuapp.com",
       "required": true
     },
     "AP_TELEMETRY_ENABLED": {
