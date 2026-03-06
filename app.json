@@ -1,12 +1,8 @@
 {
   "name": "Activepieces",
   "description": "Open-source workflow automation tool",
-  "repository": "https://github.com/activepieces/activepieces",
+  "repository": "https://github.com/alaeeddinehajji/activepieces",
   "stack": "container",
-  "addons": [
-    "heroku-postgresql:mini",
-    "heroku-redis:mini"
-  ],
   "env": {
     "AP_EXECUTION_MODE": {
       "description": "Execution mode for Heroku",
@@ -14,12 +10,13 @@
       "required": true
     },
     "AP_ENCRYPTION_KEY": {
-      "description": "32-character encryption key",
-      "generator": "secret",
+      "description": "Your encryption key",
+      "value": "a718acc8759749f93b8ebb16f50fb516",
       "required": true
     },
     "AP_FRONTEND_URL": {
-      "description": "Your Heroku app URL e.g. https://your-app-name.herokuapp.com",
+      "description": "Your Heroku app URL",
+      "value": "https://activepieces-f072d4fb20e0.herokuapp.com",
       "required": true
     },
     "AP_TELEMETRY_ENABLED": {
@@ -27,7 +24,7 @@
       "required": false
     },
     "AP_POSTGRES_HOST": {
-      "description": "PostgreSQL host from DATABASE_URL",
+      "value": "c8ie82co1njm86.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com",
       "required": true
     },
     "AP_POSTGRES_PORT": {
@@ -35,19 +32,19 @@
       "required": true
     },
     "AP_POSTGRES_DATABASE": {
-      "description": "PostgreSQL database name from DATABASE_URL",
+      "value": "dca9hoj09utua7",
       "required": true
     },
     "AP_POSTGRES_USERNAME": {
-      "description": "PostgreSQL username from DATABASE_URL",
+      "value": "u787fn8s1osmeb",
       "required": true
     },
     "AP_POSTGRES_PASSWORD": {
-      "description": "PostgreSQL password from DATABASE_URL",
+      "value": "p95d439d08d8cfbc19637d322e213d9a466ca83650ddfc582bea2ab2a2c65a215",
       "required": true
     },
     "AP_REDIS_URL": {
-      "description": "Redis URL - copy the value from REDIS_URL after deploy",
+      "description": "Copy from REDIS_URL config var in Heroku",
       "required": true
     }
   }
