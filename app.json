@@ -1,0 +1,31 @@
+{
+  "name": "Activepieces",
+  "description": "Open-source workflow automation tool",
+  "repository": "https://github.com/activepieces/activepieces",
+  "stack": "container",
+  "addons": [
+    "heroku-postgresql:mini",
+    "heroku-redis:mini"
+  ],
+  "env": {
+    "AP_EXECUTION_MODE": {
+      "description": "Execution mode for Heroku",
+      "value": "SANDBOX_CODE_ONLY",
+      "required": true
+    },
+    "AP_ENCRYPTION_KEY": {
+      "description": "32-character encryption key",
+      "generator": "secret",
+      "required": true
+    },
+    "AP_FRONTEND_URL": {
+      "description": "Your Heroku app URL",
+      "value": "https://YOUR-APP-NAME.herokuapp.com",
+      "required": true
+    },
+    "AP_TELEMETRY_ENABLED": {
+      "value": "false",
+      "required": false
+    }
+  }
+}
