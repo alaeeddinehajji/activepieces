@@ -19,13 +19,36 @@
       "required": true
     },
     "AP_FRONTEND_URL": {
-      "description": "Your Heroku app URL",
-      "value": "https://YOUR-APP-NAME.herokuapp.com",
+      "description": "Your Heroku app URL e.g. https://your-app-name.herokuapp.com",
       "required": true
     },
     "AP_TELEMETRY_ENABLED": {
       "value": "false",
       "required": false
+    },
+    "AP_POSTGRES_HOST": {
+      "description": "PostgreSQL host from DATABASE_URL",
+      "required": true
+    },
+    "AP_POSTGRES_PORT": {
+      "value": "5432",
+      "required": true
+    },
+    "AP_POSTGRES_DATABASE": {
+      "description": "PostgreSQL database name from DATABASE_URL",
+      "required": true
+    },
+    "AP_POSTGRES_USERNAME": {
+      "description": "PostgreSQL username from DATABASE_URL",
+      "required": true
+    },
+    "AP_POSTGRES_PASSWORD": {
+      "description": "PostgreSQL password from DATABASE_URL",
+      "required": true
+    },
+    "AP_REDIS_URL": {
+      "description": "Redis URL - copy the value from REDIS_URL after deploy",
+      "required": true
     }
   }
 }
